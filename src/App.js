@@ -13,7 +13,7 @@ const ProfileDetails = () => {
   const user = resource.user.read()
   return (
     <div className='card card-body my-3'>
-
+      <h1 className='large text-primary'>{user.name}</h1>
     </div>
   )
 }
