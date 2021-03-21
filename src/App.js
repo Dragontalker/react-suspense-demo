@@ -1,3 +1,6 @@
+import React, { Suspense } from 'react';
+import { fetchData } from './Api';
+
 function App() {
   return (
     <div className="App">
@@ -5,5 +8,7 @@ function App() {
     </div>
   );
 }
+
+
 
 export default App;
