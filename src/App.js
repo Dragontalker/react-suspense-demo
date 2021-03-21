@@ -23,4 +23,20 @@ const ProfileDetails = () => {
   )
 }
 
+const ProfilePosts = () => {
+  const posts = resource.posts.readr();
+  return (
+    <ul className ='list-group'>
+      <li className="list-group-item">
+        <strong>Latest Posts</strong>
+      </li>
+      {posts.map(post => (
+        <li className='list-group-item' key={post.id}>
+          {post.title}
+        </li>
+      ))}
+    </ul>
+  );
+}
+
 export default App;
