@@ -9,6 +9,13 @@ function App() {
   );
 }
 
+const ProfileDetails = () => {
+  const user = resource.user.read()
+  return (
+    <div className='card card-body my-3'>
 
+    </div>
+  )
+}
 
 export default App;
